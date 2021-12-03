@@ -78,3 +78,62 @@ check NaN
 
 condition list    
 ``` <, >, <=, >=, ===, !==, &&, ||, true, false ```
+
+### javascript on the browser
+
+html -> document
+
+```document.getElementById("ID");```
+
+-> document -> find id = "ID" element
+
+```document.querySelector(".className h1");```
+
+->class = "className" -> tag = h1 element (return first one element)    
+if want to return all h1 element use
+
+```document.querySelectorAll(".className h1");```
+
+#### event
+starting on- is event element
+
+.addEventListener("click", "what you want to do if click");
+
+```javascript
+  function handleWindowResize(){
+    document.body.style.backgroundColor = "red";
+  }
+  window.addEventListener("resize", handleWindowResize);
+```
+-> if resize window function handleWindowResize is run    
+window event: resize, copy, paste etc...
+
+- with condition
+```javascript
+  function handleColorClick() {
+    if(h1.style.color === "blue"){
+      h1. style.color = "tomato";
+    }else {
+      h1.style.color = "blue";
+    }
+  }
+  h1.addEventListener("click", handleColorClick);
+
+  function handleColorClickSecond() {
+    const clickedClass = "clicked";
+    if(h1.classList.contains(clickedClass) {
+      h1.classList.remove(clickedClass);
+    }else {
+      h1.classList.add(clickedClass);
+    }
+  }
+  h1.addEventListener("click", handleColorClickSecond());
+
+  function handleColorClickThird() {
+    h1.classList.toggle("clicked");
+  }
+  h1.addEventListener("click", handleColorClickThird());
+```
+-> three code is same function    
+-> second function is using DOMList()   
+-> third function is classList.toggle(). this is amazing(?)
