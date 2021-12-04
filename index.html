@@ -10,16 +10,20 @@
     <div class="js-clock">
         <h1>00:00</h1>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name">
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="What is your name"/>
+        <input type="submit" value="Log In"/>
     </form>
-    <h4 class="js-greetings greetings"></h4>
+    <h1 id="greeting" class="hidden"></h1>
+    <form class="hidden" id="logout-form">
+        <button id="logout-form">Log Out</button>
+    </form>
     <form class="js-toDoForm">
         <input type="text" placeholder="Write a to do">
     </form>
     <ul class="js-toDoList"></ul>
+    <script src="login.js"></script>
     <script src="clock.js"></script>
-    <script src="gretting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
 </body>
