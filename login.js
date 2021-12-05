@@ -16,6 +16,7 @@ function onLoginSubmit(event) {
 
 function onLogoutClick(event) {
     localStorage.removeItem(USERNAME_KEY);
+    window.location.reload();
 }
 
 function paintGreetings(username) {
@@ -28,8 +29,10 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
+    logoutForm.classList.add(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     paintGreetings(savedUsername);
-    logoutForm.addEventListener("click", onLogoutClick);
 }
+
+logoutForm.addEventListener("click", onLogoutClick);
