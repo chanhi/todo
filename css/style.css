@@ -31,7 +31,7 @@ body {
   animation: fadeIn 0.5s linear;
 }
 
-.js-clock {
+#js-clock {
   margin-top: 200px;
   margin-bottom: 100px;
   display: flex;
