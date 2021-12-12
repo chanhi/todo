@@ -7,7 +7,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
-    event.preventDefault();
+    event.preventDefault(); // submit 의 특성상 새로고침을 하는데 이것을 막음
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
