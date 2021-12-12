@@ -6,12 +6,6 @@ body {
   display: none;
 }
 
-.form,
-.greetings {
-  display: none;
-  text-align: center;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -42,8 +36,4 @@ body {
 
 form {
   text-align: center;
-}
-
-.js-toDoList{
-  padding: 0;
 }
