@@ -37,3 +37,21 @@ body {
 form {
   text-align: center;
 }
+
+#greeting, .toDoList {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#quote {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#weather {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
