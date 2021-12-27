@@ -18,7 +18,7 @@ function onLogoutClick(event) {
     localStorage.removeItem(USERNAME_KEY);
     window.location.reload();
 }
-
+//logout 후에 저장되어있는 localstorge를 날려야 함
 function paintGreetings(username) {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);

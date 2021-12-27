@@ -42,6 +42,7 @@ const quotes = [
     },
   ];
 //명언들을 웹 사이트에서 크롤링해서 변수로 받아오기(추가사항)
+//근데 생각해 보니까 메인 화면으로 쓰기엔 속도가 너무 느릴 것 같음
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];

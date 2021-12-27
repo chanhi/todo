@@ -1,3 +1,6 @@
+@import "quote.css";
+@import "todo-list.css";
+
 body {
   background-color: #10252a;
 }
@@ -38,16 +41,10 @@ form {
   text-align: center;
 }
 
-#greeting, .toDoList {
+#greeting {
   display: flex;
   justify-content: center;
   position: relative;
-}
-
-#quote {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 #weather {
