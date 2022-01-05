@@ -52,3 +52,7 @@ form {
   top: 50px;
   right: 50px;
 }
+
+#alert-login {
+  text-align: center;
+}
