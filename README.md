@@ -6,9 +6,11 @@
 
 ### What is JavaScript??!?
 
-*only programming languages can use on the Frontend
-*it comes installed with all the browsers
-*it was created in 10days
+1. only programming languages can use on the Frontend
+
+2. it comes installed with all the browsers
+
+3. it was created in 10days
 
 CSS : commonly in head
 ```HTML
