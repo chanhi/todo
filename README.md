@@ -4,6 +4,12 @@
 
 ### Bring css, js in HTML
 
+### What is JavaScript??!?
+
+*only programming languages can use on the Frontend
+*it comes installed with all the browsers
+*it was created in 10days
+
 CSS : commonly in head
 ```HTML
     <link rel="stylesheet" href="file.css" />
