@@ -28,7 +28,12 @@ make Variables by js
     let variablesNameBlabla = "values";
 ```
 const : constant variable   
-let : changealble variable
+let : changeable variable
+
+null : nothing in variable
+undefined : not creating variable
+
+tip! commonly use const and if you need to changeable variable then you can use let
 
 ### Datatype
 number : 1, 10, 13.1 ...    
@@ -43,31 +48,35 @@ array
 object
 ```javascript
     const object = {
-      object1 = 2,
-      object2 = "n",
+      object1 : 2,
+      object2 : "n",
     };
-    console.log(object.object1)
+    console.log(object.object1);
+    //equal-> console.log(object["object1"]);
     object.object3 = true;
+    console.log(object);
+    //{object1:.., object2:.., object3:..}
 ```
 
 ### Function
 ```javascript
-    function functionName(arg){
+    function functionName1(arg){ //arg1, arg2, ...
       console.log(arg + "blabla");
     }
     const object = {
       object1: "ex",
-      functionName: function (arg){
+      functionName2: function (arg){
         return arg + 2;
       },
       object2: true
     };
 ```
+give a result when use  return  
 
 ### Conditionals
 input value
 ``` const v = prompt("입력하세요");```    
-check type
+check type (NaN: Not a Number)
 ``` console.log(typeof v); ```    
 change type 
 ``` vInt = parseInt(v); ```   
@@ -85,7 +94,7 @@ check NaN
 ```
 
 condition list    
-``` <, >, <=, >=, ===, !==, &&, ||, true, false ```
+``` <, >, <=, >=, ===, !==, &&(and), ||(or), true, false ```
 
 ### javascript on the browser
 
