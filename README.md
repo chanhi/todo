@@ -98,11 +98,21 @@ condition list
 
 ### javascript on the browser
 
+```console.dir(document);```
+
 html -> document
 
 ```document.getElementById("ID");```
 
 -> document -> find id = "ID" element
+
+```document.getElementByClassName("classname");```
+
+-> document -> find classname = All "classname" element
+
+```document.getElementByTagName("Tag");```
+
+-> document -> find tag = All tag element (type:array)
 
 ```document.querySelector(".className h1");```
 
@@ -112,7 +122,7 @@ if want to return all h1 element use
 ```document.querySelectorAll(".className h1");```
 
 #### event
-starting on- is event element
+starting ```on-``` is event element
 
 .addEventListener("click", "what you want to do if click");
 
