@@ -106,7 +106,7 @@ html -> document
 
 -> document -> find id = "ID" element
 
-```document.getElementByClassName("classname");```
+```document.getElementsByClassName("classname");```
 
 -> document -> find classname = All "classname" element
 
