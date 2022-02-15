@@ -7,7 +7,7 @@ function getTime() {
     const seconds = String(date.getSeconds()).padStart(2,"0");
     //new Date().getSeconds().toString().padStart(2,"0");  기능 같음
     clock.innerText = `${hours}:${minutes}:${seconds}`;
-
+    //padStart(2,"0") -> 문자열을 2로 fix하고 만약 길이가 2가 아니면 '앞'에 "0"을 붙인다.
 }
 
 function init() {
